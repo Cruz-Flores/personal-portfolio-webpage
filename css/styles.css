@@ -1,17 +1,9 @@
-/* revisar altura de width div /// altura y display flex de section */
-
 /* Custom properties/variables  */
 :root {
-  /* hero and footer background, quote text */
   --dark-blue: #1f2937;
-  /* hero main text */
+  --blue: #3882f6;
   --main-white: #f9faf8;
-  /* hero secondary text, quote section background */
   --secondary-white: #e5e7eb;
-  /* header-logo text */
-  --logo-white: #f9faf8;
-  /* button color */
-  --button-blue: #3882f6;
 }
 
 /* Base reset */
@@ -95,7 +87,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: var(--secondary-white);
 }
 
 button {
@@ -104,7 +96,7 @@ button {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
-  background-color: var(--button-blue);
+  background-color: var(--blue);
   color: var(--secondary-white);
   font-size: 1.8rem;
 }
@@ -144,9 +136,9 @@ button {
   padding: 2rem;
 }
 
-/* first section */
+/* welcome section */
 
-.first-section {
+.welcome-section {
   height: 100vh;
   background-color: var(--dark-blue);
   padding-top: 7rem;
@@ -175,19 +167,19 @@ button {
   height: auto;
 }
 
-/* second section */
+/* projects section */
 
-.second-section {
-  background-color: var(--logo-white);
+.projects-section {
+  background-color: var(--main-white);
   color: var(--dark-blue);
 }
 
-.second-section-div {
+.projects-div {
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.second-section-div > h2 {
+.projects-div > h2 {
   font-size: 4rem;
   padding-bottom: 3rem;
 }
@@ -202,7 +194,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 15rem; */
 }
 
 .container-div > p {
@@ -216,7 +207,7 @@ button {
   display: block;
   width: fit-content;
   padding: 0.5rem 2rem;
-  background-color: var(--button-blue);
+  background-color: var(--blue);
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
@@ -226,7 +217,7 @@ button {
   background-position: center center;
   width: 18rem;
   height: 18rem;
-  border: 4px solid var(--button-blue);
+  border: 4px solid var(--blue);
   border-radius: 15px;
 }
 
@@ -242,30 +233,30 @@ button {
   background-image: url('../images/books-app.png');
 }
 
-/* third section */
+/* about section */
 
-.third-section {
+.about-section {
   background-color: var(--secondary-white);
 }
 
-.third-section-div {
+.about-div {
   color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   max-width: 1000px;
 }
 
-.third-section-div > h2 {
+.about-div > h2 {
   font-size: 5rem;
   margin-bottom: 2rem;
 }
 
-.third-section-div > p {
+.about-div > p {
   font-size: 2rem;
   font-style: italic;
 }
 
-/* four section */
+/* skills section */
 
 .skills-section {
   background-color: var(--dark-blue);
@@ -294,7 +285,7 @@ button {
 /* contact section */
 
 .contact-section {
-  background-color: var(--button-blue);
+  background-color: var(--blue);
 }
 
 .contact-div {
@@ -317,11 +308,11 @@ button {
   height: auto;
   border-radius: 10px;
   padding: 2rem;
-  background-color: #fbfbfb;
+  background-color: var(--main-white);
 }
 
 input {
-  background-color: #fbfbfb;
+  background-color: var(--main-white);
   max-width: 42rem;
   width: 100%;
   height: 40px;
@@ -335,7 +326,7 @@ input {
 }
 
 textarea {
-  background-color: #fbfbfb;
+  background-color: var(--main-white);
   max-width: 42rem;
   width: 100%;
   height: 15rem;

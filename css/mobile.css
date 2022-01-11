@@ -15,10 +15,10 @@
   }
 }
 
-/* first section */
+/* welcome section */
 
 @media (max-width: 650px) {
-  .first-section-div {
+  .welcome-div {
     flex-direction: column;
     justify-content: space-around;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-/* second section */
+/* projects section */
 
 @media (max-width: 650px) {
   .gallery-div {
